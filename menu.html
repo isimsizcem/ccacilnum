@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="tr" class="h-100"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACİL DURUM </title>
+
+<style type="text/css">
+body{
+
+  background-color: lightslategray;
+}
+*{
+padding: 0;
+margin: 0;
+  }
+
+li{
+background-color:#383838;
+padding: 25px;
+text-align: center;
+
+border: solid 2px black;
+
+
+}
+a{
+color: whitesmoke;
+  text-decoration: none;
+  
+}
+h2{
+
+  color: lightslategray;
+  text-align: center;
+  font-family: fantasy;
+  padding: 15px;
+
+
+}div{
+
+  width: 100%;
+
+}
+
+
+</style>
+
+<body>
+  <div style="background-color: black; position: fixed; "><h2>ACİL DURUM SESİ / ACİL NUMARALAR</h2></div>
+  <hr>
+     <br>
+       <br>
+         <br>
+
+   
+   <p> <b></b></p>
+   <ul><li><a href="tel:155"> <h3 style="color: red;text-align: center;">UYARI</h3><br>ACİL NUMARALAR butonu sizi numaralar bölümüne yönlendirir!
+   YÜKSEK İKAZ SESİ butonuna tıkladığınızda yüksek sesli yüksek ikaz sesi oynatır.
+    </a></li></ul>
+    <br>
+    <br>
+     <br>
+    <br>
+   <ul><li><a href="index.html"><b>ACİL DURUM</b>
+    </a></li></ul>
+     <br>
+      <br>
+         <ul><li>
+           <audio id="audio" src="uyrcıss.mp3" autostart="false" ></audio>
+          <a onclick="PlaySound()"><b> YÜKSEK İKAZ SESİ</b></a>
+ 
+         <script>
+           function PlaySound() {
+          var sound = document.getElementById("audio");
+          sound.play()
+document.getElementById("audio").loop = true;
+      }
+
+    </script></a></li></ul>
+    <br>
+    <br>
+    <ul><li><a href="menu.html"> <b>YÜKSEK İKAZ SESİ KAPA</b></a></li></ul>
+</body></html>
